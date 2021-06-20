@@ -12,28 +12,28 @@ const ServicesSection = () => {
         <div className="cards">
           <div className="card">
             <div className="icon">
-              <img src={clock} />
+              <img src={clock} alt="icon" />
               <h3>Efficient</h3>
             </div>
             <p>Lorem Ipsum dolor sit.</p>
           </div>
           <div className="card">
             <div className="icon">
-              <img src={diaphgram} />
+              <img src={diaphgram} alt="icon" />
               <h3>Diaphgram</h3>
             </div>
             <p>Lorem Ipsum dolor sit.</p>
           </div>
           <div className="card">
             <div className="icon">
-              <img src={money} />
+              <img src={money} alt="icon" />
               <h3>Affordable</h3>
             </div>
             <p>Lorem Ipsum dolor sit.</p>
           </div>
           <div className="card">
             <div className="icon">
-              <img src={teamwork} />
+              <img src={teamwork} alt="icon" />
               <h3>Team Work</h3>
             </div>
             <p>Lorem Ipsum dolor sit.</p>
@@ -41,7 +41,7 @@ const ServicesSection = () => {
         </div>
       </div>
       <div className="image">
-        <img src={home2} />
+        <img src={home2} alt="image" />
       </div>
     </div>
   );
