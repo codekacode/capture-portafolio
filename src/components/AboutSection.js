@@ -1,5 +1,5 @@
 import React from 'react';
-import home1 from '../img/karem-codeable-medium.jpg';
+import home1 from '../img/karem.jpg';
 import { Layout, Description, Image, Hide } from '../style';
 
 const AboutSection = () => {
