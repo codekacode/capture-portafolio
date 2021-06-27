@@ -2,27 +2,19 @@ import React from 'react';
 import home1 from '../img/karem.jpg';
 import { Layout, Description, Image, Hide } from '../style';
 import { motion } from "framer-motion";
+import {titleAnim, fade, photoAnim} from "../animation"
 
 const AboutSection = () => {
 
-  const titleAnim = {
-    hidden: {opacity:0},
-    show: {opacity:1, transition: {duration: 2}}
-  };
-
-  const container = {
-    hidden: {x:100},
-    show: {x:0, transition: {duration: 0.75, ease: "easeOut", staggerChildren: 1}}, // when: "afterChildren"
-  };
+  // const container = {
+  //   hidden: {x:100},
+  //   show: {x:0, transition: {duration: 0.75, ease: "easeOut", staggerChildren: 1}}, // when: "afterChildren"
+  // };
 
   return (
     <Layout>
       <Description>
-        <motion.div 
-          variants={container} 
-          initial="hidden" 
-          animate="show" 
-          className="title">
+        <motion.div>
           <Hide>
               <motion.h2 variants={titleAnim}>
                   I work to make
@@ -35,11 +27,11 @@ const AboutSection = () => {
               <motion.h2 variants={titleAnim}>true.</motion.h2>
           </Hide>
         </motion.div>
-        <p>Contac us for any idea that you have.</p>
-        <button>Contact me</button>
+        <motion.p variants={fade}>Contac us for any idea that you have.</motion.p>
+        <motion.button variants={fade}>Contact me</motion.button>
       </Description>
       <Image>
-        <img src={home1} alt="my photo" with="200px" />
+        <motion.img variants={photoAnim} src={home1} alt="my photo" with="200px" />
       </Image>
     </Layout>
   )
