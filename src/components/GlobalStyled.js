@@ -6,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
   }
   body {
     background-color: #1b1b1b;
