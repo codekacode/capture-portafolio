@@ -1,48 +1,47 @@
 import {useState} from "react";
 import styled from "styled-components";
 import {Layout} from '../style';
-import Toggle from "./Toggle"
+import Toggle from "./Toggle";
+import {AnimateSharedLayout} from "framer-motion";
 
 const FaqSection = () => {
   return(
     <Faq>
       <h2>Any Questions <span>FAQ</span></h2>
-      <Toggle>
-        <div className="question">
-          <h4>How Do I Start?</h4>
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
-            <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+            </div> 
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <Toggle>
-        <div className="question">
-          <h4>Daily Schedule</h4>
-          <div className="answer">
-            <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
-            <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+        </Toggle>
+        <Toggle title="Daily Schedule">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+            </div>
           </div>
-          <div className="faq-line"></div>
-        </div>
-      </Toggle>
-      <div className="question">
-        <h4>Diferent Payment</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
-          <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What product do you offer?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
-          <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        </Toggle>
+        <Toggle title="Diferent Payment">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+            </div>
+          </div>
+        </Toggle>
+        <Toggle title="What product do you offer?">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja</p>
+              <p>Lorem ipsum dolor sit amet, consectetur jahdja Nececitabu haba</p>
+            </div>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
