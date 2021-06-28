@@ -5,21 +5,11 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import { Layout, Description, Image, Hide } from '../style';
 import styled from 'styled-components';
-
-//test
-import {useInView} from "react-intersection-observer";
-import {useAnimation} from "framer-motion";
 import {fade} from "../animation"
+import {useScroll} from "./useScroll"
 
 const ServicesSection = () => {
-  const controls = useAnimation();
-  const [element, view] = useInView({threshold: 0.5});
-  if(view){
-    controls.start("show");
-  }else{
-    controls.start("hidden");
-  };
-
+  const [element,controls] = useScroll();
   return(
     <Services variants={fade} animate={controls} initial="hidden" ref={element}>
       <Description>
