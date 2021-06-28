@@ -9,7 +9,12 @@ import {fade} from "../animation"
 const FaqSection = () => {
   const [element, controls] = useScroll();
   return(
-    <Faq variants={fade} ref={element} animate={controls} initial="hidden" >
+    <Faq
+      variants={fade}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>Any Questions <span>FAQ</span></h2>
       <AnimateSharedLayout>
         <Toggle title="How Do I Start?">
