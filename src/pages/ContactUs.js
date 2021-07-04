@@ -1,5 +1,6 @@
 import {motion} from "framer-motion";
-import {pageAnimation} from "../animation"
+import {pageAnimation, titleAnimgit status
+} from "../animation"
 
 const ContactUs = () => {
   return(
