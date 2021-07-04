@@ -1,6 +1,6 @@
 import AboutUs from "./pages/AboutUs";
 import GlobalStyled from './components/GlobalStyled'
-import ContactUs from "./pages/ConstactUs";
+import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork"
 import Nav from "./components/Nav";
 import {Switch, Route, useLocation} from "react-router-dom";
